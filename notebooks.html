@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Informe Python &#8212; jbook_ml202330</title>
+    <title>Parcial 30 sept. ML 2023030 &#8212; Parcial ML 2023-30</title>
   
   
   
@@ -63,11 +63,10 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Titulo';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Informe Python" href="Resumen.html" />
-    <link rel="prev" title="Informe de Machine Learning" href="intro.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,20 +153,12 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Informe de Machine Learning
+                    Welcome to your Jupyter Book
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Informe Python</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Resumen.html">Informe Python</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Metodologia.html">Informe Python</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="Resultados%20y%20Discusiones.html">Resultados y Discusiones</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Conclusiones.html">Informe Python</a></li>
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Parcial 30 sept. ML 2023030</a></li>
 </ul>
 
     </div>
@@ -239,7 +230,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTitulo.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -269,7 +260,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/Titulo.ipynb" target="_blank"
+      <li><a href="_sources/notebooks.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -351,7 +342,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Informe Python</h1>
+    <h1>Parcial 30 sept. ML 2023030</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -361,26 +352,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Informe Python</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lectura-del-dataset">Lectura del Dataset</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#resultados-y-discusiones">Resultados y Discusiones</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eda-y-preprocesamiento">EDA y preprocesamiento</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-engineering-balanceo-de-clases-smote-y-one-hot-encoding">Feature Engineering (Balanceo de clases SMOTE y One Hot Encoding)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementacion-de-modelos">Implementacion de modelos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementacion-modelo-del-articulo">Implementacion modelo del artículo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tablas-de-error-evaluacion-de-modelos">Tablas de Error - Evaluación de modelos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redactar-secciones-titulo-resumen-y-metologia">Redactar Secciones Titulo, Resumen y Metología</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -391,8 +366,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="informe-python">
-<h1>Informe Python<a class="headerlink" href="#informe-python" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="parcial-30-sept-ml-2023030">
+<h1>Parcial 30 sept. ML 2023030<a class="headerlink" href="#parcial-30-sept-ml-2023030" title="Permalink to this heading">#</a></h1>
 <p>You can also create content with Jupyter Notebooks. This means that you can include
 code blocks and their outputs in your book.</p>
 <section id="markdown-notebooks">
@@ -434,7 +409,7 @@ For example, here’s some sample Matplotlib code:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;contextlib.ExitStack at 0x27031457b80&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;contextlib.ExitStack at 0x151db7c7e50&gt;
 </pre></div>
 </div>
 </div>
@@ -468,220 +443,13 @@ For example, here’s some sample Matplotlib code:</p>
 </div>
 <p>There is a lot more that you can do with outputs (such as including interactive outputs)
 with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
-</section>
-<section id="lectura-del-dataset">
-<h2>Lectura del Dataset<a class="headerlink" href="#lectura-del-dataset" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="nb">dir</span><span class="o">=</span><span class="s1">&#39;data_inscripciones.csv&#39;</span>
-<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Unnamed: 0&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\fredy\AppData\Local\Temp\ipykernel_9880\1879254073.py:3: DtypeWarning: Columns (1,2,4,5,6,17,21,34,35,55,58,59,60,72,73,82,84,86,87,101,109,110,111,124,125,126,127,128,129,130,131,133,134,135,136) have mixed types. Specify dtype option on import or set low_memory=False.
-  df=pd.read_csv(dir, sep=&#39;;&#39;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span>
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>AIDM</th>
-      <th>ID_WEB</th>
-      <th>DISCAPACIDAD</th>
-      <th>PIDM</th>
-      <th>PERIODO</th>
-      <th>NUM_SOLICITUD</th>
-      <th>IND_COMPLETA</th>
-      <th>IND_ACEPTADA</th>
-      <th>Ind_Sol_01_69_75</th>
-      <th>ULTIMO_PERIODO_ACADEMICO</th>
-      <th>...</th>
-      <th>NOMBRE_PADRE</th>
-      <th>TELEFONO_PADRE_</th>
-      <th>NOMBRE_ACUDIENTE</th>
-      <th>CORREO_ACUDIENTE</th>
-      <th>Program_Insc</th>
-      <th>Zip1</th>
-      <th>FECHA_CREACION_INSC</th>
-      <th>FECHA_FINALIZACION_INSC</th>
-      <th>ATRIBUTO_SGASADD</th>
-      <th>Promedio_Notas_Bachillerato</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>244782</td>
-      <td>201610</td>
-      <td>1</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>N</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>47001000.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>244755</td>
-      <td>201610</td>
-      <td>1</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>N</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>13001000.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>00: Ninguno</td>
-      <td>244622</td>
-      <td>201610</td>
-      <td>1</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>202030.0</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>13001000.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>244600</td>
-      <td>201610</td>
-      <td>1</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>23001000.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>00: Ninguno</td>
-      <td>108609</td>
-      <td>201610</td>
-      <td>4</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>201610.0</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>8758000.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 136 columns</p>
-</div></div></div>
-</div>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="resultados-y-discusiones">
-<h1>Resultados y Discusiones<a class="headerlink" href="#resultados-y-discusiones" title="Permalink to this heading">#</a></h1>
-<section id="eda-y-preprocesamiento">
-<h2>EDA y preprocesamiento<a class="headerlink" href="#eda-y-preprocesamiento" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="feature-engineering-balanceo-de-clases-smote-y-one-hot-encoding">
-<h2>Feature Engineering (Balanceo de clases SMOTE y One Hot Encoding)<a class="headerlink" href="#feature-engineering-balanceo-de-clases-smote-y-one-hot-encoding" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="implementacion-de-modelos">
-<h2>Implementacion de modelos<a class="headerlink" href="#implementacion-de-modelos" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="implementacion-modelo-del-articulo">
-<h2>Implementacion modelo del artículo<a class="headerlink" href="#implementacion-modelo-del-articulo" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="tablas-de-error-evaluacion-de-modelos">
-<h2>Tablas de Error - Evaluación de modelos<a class="headerlink" href="#tablas-de-error-evaluacion-de-modelos" title="Permalink to this heading">#</a></h2>
-<section id="redactar-secciones-titulo-resumen-y-metologia">
-<h3>Redactar Secciones Titulo, Resumen y Metología<a class="headerlink" href="#redactar-secciones-titulo-resumen-y-metologia" title="Permalink to this heading">#</a></h3>
-</section>
 </section>
 </section>
 
@@ -722,17 +490,8 @@ with your book. For more information about this, see <a class="reference externa
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Informe de Machine Learning</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="Resumen.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Informe Python</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -752,26 +511,10 @@ with your book. For more information about this, see <a class="reference externa
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Informe Python</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lectura-del-dataset">Lectura del Dataset</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#resultados-y-discusiones">Resultados y Discusiones</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eda-y-preprocesamiento">EDA y preprocesamiento</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-engineering-balanceo-de-clases-smote-y-one-hot-encoding">Feature Engineering (Balanceo de clases SMOTE y One Hot Encoding)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementacion-de-modelos">Implementacion de modelos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementacion-modelo-del-articulo">Implementacion modelo del artículo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tablas-de-error-evaluacion-de-modelos">Tablas de Error - Evaluación de modelos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redactar-secciones-titulo-resumen-y-metologia">Redactar Secciones Titulo, Resumen y Metología</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
@@ -785,7 +528,7 @@ with your book. For more information about this, see <a class="reference externa
   <div class="footer-item">
     
 <p class="component-author">
-By Gina Buvoli Gomez
+By Gina Buvoli
 </p>
 
   </div>
