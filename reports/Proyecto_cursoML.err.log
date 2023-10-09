@@ -30,7 +30,11 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-sns.set(font_scale=1.8)
-Train.iloc[: , 1:].hist(figsize = (30,30), color = 'red');
+elimina = True
+while elimina:
+    vif = calculate_vif(dfloat)
+    elimina = eliminacion_vif(vif, dfloat)
+    features=vif.features
+    print(vif.head(10))
 -------------------
 
