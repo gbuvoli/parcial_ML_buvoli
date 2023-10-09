@@ -20,8 +20,8 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
 df=pd.merge(pd.read_csv('/content/drive/MyDrive/train_transaction_new.csv', sep=','),pd.read_csv('/content/drive/MyDrive/train_identity_new.csv', sep=','), on='TransactionID', how='left')
 ------------------
 
-[1;31m---------------------------------------------------------------------------[0m
-[1;31mFileNotFoundError[0m                         Traceback (most recent call last)
+[1;31m----------------------------------------------------------------[0m
+[1;31mFileNotFoundError[0m              Traceback (most recent call last)
 Cell [1;32mIn[2], line 1[0m
 [1;32m----> 1[0m df[38;5;241m=[39mpd[38;5;241m.[39mmerge([43mpd[49m[38;5;241;43m.[39;49m[43mread_csv[49m[43m([49m[38;5;124;43m'[39;49m[38;5;124;43m/content/drive/MyDrive/train_transaction_new.csv[39;49m[38;5;124;43m'[39;49m[43m,[49m[43m [49m[43msep[49m[38;5;241;43m=[39;49m[38;5;124;43m'[39;49m[38;5;124;43m,[39;49m[38;5;124;43m'[39;49m[43m)[49m,pd[38;5;241m.[39mread_csv([38;5;124m'[39m[38;5;124m/content/drive/MyDrive/train_identity_new.csv[39m[38;5;124m'[39m, sep[38;5;241m=[39m[38;5;124m'[39m[38;5;124m,[39m[38;5;124m'[39m), on[38;5;241m=[39m[38;5;124m'[39m[38;5;124mTransactionID[39m[38;5;124m'[39m, how[38;5;241m=[39m[38;5;124m'[39m[38;5;124mleft[39m[38;5;124m'[39m)
 
